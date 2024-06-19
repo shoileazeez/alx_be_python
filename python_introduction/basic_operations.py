@@ -1,6 +1,6 @@
-number1=10
+number1 = 10
 print(number1)
-number2=5
+number2 = 5
 print(number2)
 Addition=number1+number2
 print(Addition)
