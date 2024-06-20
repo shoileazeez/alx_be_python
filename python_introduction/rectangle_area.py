@@ -2,5 +2,6 @@ length = 10
 print(length)
 width = 5
 print(width)
-Area=(length*width)
-print(f"The area of the rectangle is: {Area}")
+area=(length*width)
+print(area)
+print(f"The area of the rectangle is: {area}")
