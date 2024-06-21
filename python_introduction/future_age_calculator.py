@@ -8,7 +8,7 @@
 #age = num2 + num3
 #print(f" In 2050, you will be {age} years old")
 
-current_age = int(input("how old are you?"))
+current_age = int(input("How old are you?"))
 current_year = 2023
 future_year = 2050
 
