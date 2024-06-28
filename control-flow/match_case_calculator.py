@@ -19,13 +19,3 @@ elif Choose_the_operation == '*':
 elif Choose_the_operation == '/':
     result = num1 / num2
     print(f"The result is {result}.")
-      
-
-
-         
-    
-   
-                        
-                        
-    
-                    
