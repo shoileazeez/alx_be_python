@@ -28,7 +28,6 @@ elif score >= 70:
   grade = "C"
 else:
   grade = "F"
-
 print("Your grade is:", grade)
 
 
