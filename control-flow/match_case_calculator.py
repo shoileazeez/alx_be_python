@@ -1,22 +1,21 @@
-num1 = int(input("enter the first number:"))
-num2 = int(input("enter the second number:"))
-Choose_the_operation = input('''
-please type the operation you would like to perform
-+ for addition 
-- for subtraction
-* for multiplication
-/ for division                             
-''')
-print(f"Choose the operation (+, -, *, /): {Choose_the_operation}")
-if Choose_the_operation == '+':
-    result = num1 + num2 
-    print(f"The result is {result}.")
-elif Choose_the_operation =='-':
-    result = num1 - num2
-    print(f"The result is {result}.")
-elif Choose_the_operation == '*':
-    result = num1 * num2
-    print(f"The result is {result}.")
-elif Choose_the_operation == '/':
-    result = num1 / num2
-    print(f"The result is {result}.")
+num1 = int(input("enter the first number: "))
+num2 = int(input("enter the second number: "))
+Choose_the_operation = input("Choose the operation (+, -, *, /): ")
+
+match Choose_the_operation:
+    case '+':
+        Choose_the_operation = num1 + num2
+        print(f"The result is :{Choose_the_operation}")
+    case '-':
+        Choose_the_operation = num1 - num2
+        print(f"The result is :{Choose_the_operation}")
+    case '*':
+        Choose_the_operation = num1 * num2 
+        print(f"The result is :{Choose_the_operation}") 
+    case '/':
+        if num2 !=0:
+            Choose_the_operation = num1 / num2
+            print(f"The result is :{Choose_the_operation}")  
+        else:
+            print(f"cannot divide by zero .")
+                
