@@ -28,9 +28,4 @@ elif Choose_the_operation == '/':
                         
                         
     
-                        
-                        
-                        
                     
-
-
