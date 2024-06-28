@@ -7,6 +7,7 @@ please type the operation you would like to perform
 * for multiplication
 / for division                             
 ''')
+print(f"Choose the operation (+, -, *, /): {Choose_the_operation}")
 if Choose_the_operation == '+':
     result = num1 + num2 
     print(f"The result is {result}.")
