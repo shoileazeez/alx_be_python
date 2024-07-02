@@ -4,7 +4,7 @@ while i == pattern_size:
  for i in range(pattern_size):
    for j in range(pattern_size):
     print("*",end='')
-   print() 
+   print()
    
 
 
