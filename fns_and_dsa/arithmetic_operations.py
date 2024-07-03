@@ -73,9 +73,9 @@ def perform_operation(num1, num2, operation):
           case "multiply":
                return num1 * num2
           case "divide":
-               if num2 ==0:
+               if num1 ==0:
                    return "error: division by zero"
-               elif num1 == 0:
+               elif num2 == 0:
                   return "can not be divide by zero"
                else:
                   return num1 / num2
