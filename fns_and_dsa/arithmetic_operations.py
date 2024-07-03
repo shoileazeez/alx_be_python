@@ -64,7 +64,28 @@
   #return x + y
   
   
-def perform_operation(num1 = float(input(f"enter the first number: "))  ,num2 = float(input(f"enter the secopnd number:  "))): 
-      operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()   
-      return num1 , operation , num2 
+def perform_operation(num1, num2, operation):
+     match operation:
+          case"add":
+               return num1 +num2
+          case "subtract":
+               return num1 - num2
+          case "multiply":
+               return num1 * num2
+          case "divide":
+               if num2 ==0:
+                   return "error: division by zero"
+               elif num1 == 0:
+                  return "can not be divide by zero"
+               else:
+                  return num1 / num2
+     
+     
+                 
+     
+               
 
+               
+    
+     
+      
