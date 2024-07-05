@@ -76,16 +76,19 @@
  # print(thislist[i])
  # i = i + 1
     
-shopping_list = [] 
-def add_shopping_list():
-  shopping_list = input(f"enter the list you would like to add: ")
-  shopping_list.append(shopping_list)
-  print(f"shopping_list{shopping_list} added succesful")
-  add_shopping_list()
-  
-  
-def view_shopping_list(shopping_list):
-  if not shopping_list:
-    print("no shooping_list added")
-    add_shopping_list()
-    
+while True:
+    user_choice = input("do you want to convert F or C?: ")
+    match user_choice:
+        case "F":
+            x = int(input("Please enter farihneit tempature: "))
+            farinheit = (x-32) * 5/9
+            print(farinheit)
+            break
+        case "C":
+            c = int(input("Please enter celcius tempature: "))
+            celcius = (c*1.8) + 32
+            print(celcius)
+            break
+        case _:
+            print("wrong input")
+            continue
