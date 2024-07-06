@@ -4,18 +4,18 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
-    if isinstance(fahrenheit,(int, float)):
-        celsius = (fahrenheit -32) * CELSIUS_TO_FAHRENHEIT_FACTOR
-        return celsius
+    if isinstance(FAHRENHEIT_TO_CELSIUS_FACTOR,(int, float)):
+        FAHRENHEIT_TO_CELSIUS_FACTOR = (FAHRENHEIT_TO_CELSIUS_FACTOR -32) * CELSIUS_TO_FAHRENHEIT_FACTOR
+        return FAHRENHEIT_TO_CELSIUS_FACTOR
     else:
         raise ValueError("Invalid temperature. please enter: ")
     
 
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    if isinstance(celsius, (int, float)):
-        fahrenheit = (celsius + 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-        return fahrenheit
+    if isinstance(CELSIUS_TO_FAHRENHEIT_FACTOR, (int, float)):
+        CELSIUS_TO_FAHRENHEIT_FACTOR = (CELSIUS_TO_FAHRENHEIT_FACTOR + 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+        return CELSIUS_TO_FAHRENHEIT_FACTOR
     
 def main():
     while True:
@@ -43,7 +43,7 @@ def main():
             break
 
 if __name__ == "__main__":
-    main()   
+    main()    
      
 
                  
