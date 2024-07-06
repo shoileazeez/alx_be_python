@@ -76,19 +76,46 @@
  # print(thislist[i])
  # i = i + 1
     
-while True:
-    user_choice = input("do you want to convert F or C?: ")
-    match user_choice:
-        case "F":
-            x = int(input("Please enter farihneit tempature: "))
-            farinheit = (x-32) * 5/9
-            print(farinheit)
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
+
+def main():
+    shopping_list = []
+    while True:
+        display_menu()
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            item = input("enter the item to add: ")
+            shopping_list.append(item)
+            print(f"{item} added to the list")
+            pass
+        elif choice == '2':
+            item = input("enter item to remove: ")
+            if item in shopping_list:
+             shopping_list.remove(item)
+             print(f"{item} removed from the list: ")
+            else:
+                print(f"{item} not find in the list: ")
+            pass
+            print
+        elif choice == '3':
+            if shopping_list:
+                print("your shopping list. ")
+                for item in shopping_list:
+                 print(item)
+            else:
+                print(f"{item} no item in shopping list: ")     
+            pass
+        elif choice == '4':
+            print("Goodbye!")
             break
-        case "C":
-            c = int(input("Please enter celcius tempature: "))
-            celcius = (c*1.8) + 32
-            print(celcius)
-            break
-        case _:
-            print("wrong input")
-            continue
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
