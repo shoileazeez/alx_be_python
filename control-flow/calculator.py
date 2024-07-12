@@ -19,3 +19,10 @@ def multiplication(x, y):
 def division(x ,y):
     """"Returns the division of the two number."""
     return x * y
+  
+if __name__ == "__main__":
+    add()
+    subtract()
+    division()
+    multiplication()
+    
