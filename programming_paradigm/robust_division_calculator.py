@@ -9,6 +9,6 @@ def safe_divide(numerator, denominator):
          raise ValueError("Error: please enter the numeric value ") from None
     
     except ZeroDivisionError:
-         raise ZeroDivisionError
+         raise ZeroDivisionError("Error: Cannot divide by zero.")
      
         
