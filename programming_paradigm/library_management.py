@@ -15,14 +15,14 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
         
-    def  check_out_book(self, title):
+    def  check_out_book(self,):
         for book in self.books:
-            if book.title == title and book.is_avaliable():
+            if book.title == book and book.is_avaliable():
                 book.check_out()
-                print(f"checked out{title}: ")
+                print(f"checked out{book}: ")
                 
             else: 
-                print(f"book {title} has been checked out or is not in the libary ")  
+                print(f"book {book} has been checked out or is not in the libary ")  
                 
                 
                 
