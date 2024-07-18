@@ -23,7 +23,7 @@ class PrintBook(Book):
     def __init__(self, title, author, page_count ):
         super().__init__(title, author)
         self.page_count = page_count
-        print(f"PrintBook:" ,self.title , self.author, "Page Count:",page_count)
+        print(f"PrintBook: {self.title} by {self.author}, page Count: {page_count}")
         pass
     
     
