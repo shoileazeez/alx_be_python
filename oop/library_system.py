@@ -1,7 +1,8 @@
 class Book:
-    def __init__(self, title, author):
+    def __init__(self, title, author ):
         self.title = title
         self.author = author
+  
         
     def __str__(self):
         return f" {self.title,}  by  {self.author} "   
@@ -9,7 +10,7 @@ class Book:
 
 class EBook(Book):
     def __init__(self, title, author, file_size ):
-        super().__init__(title, author, file_size)
+        super().__init__(title, author)
         self.file_size = file_size
         
     def __str__(self):
@@ -18,7 +19,7 @@ class EBook(Book):
         
 class PrintBook(Book):
     def __init__(self, title, author, page_count ):
-        super().__init__(title, author, page_count)
+        super().__init__(title, author)
         self.page_count = page_count
         
         
@@ -47,25 +48,25 @@ class Library():
         
         
         
-library = Library()
+# library = Library()
 
-ebook = EBook("1984", "George Orwell",  "PDF")
-printbook = PrintBook("To Kill a Mockingbird", "Harper Lee",  324)
+# ebook = EBook("1984", "George Orwell",  "PDF")
+# printbook = PrintBook("To Kill a Mockingbird", "Harper Lee",  324)
 
-library.add_book(ebook)
-library.add_book(printbook)
+# library.add_book(ebook)
+# library.add_book(printbook)
 
-print("Listing all books in the library:")
-library.list_books()
+# print("Listing all books in the library:")
+# library.list_books()
 
-print("\nFinding a book by title:")
-book = library.find_book_by_title("1984")
-if book:
-    print(book)
-else:
-    print("Book not found.")
+# print("\nFinding a book by title:")
+# book = library.find_book_by_title("1984")
+# if book:
+#     print(book)
+# else:
+#     print("Book not found.")
 
-library.list_books()
+# library.list_books()
         
         
             
